@@ -12,7 +12,7 @@ Widget weatherLocation(String location, IconData icon, String temperature , Stri
           SizedBox(
           height: 50.0,
         ),
-         Text("$location", style: TextStyle(fontSize: 10,color: Color.fromARGB(255, 255, 255, 255)),
+         Text("$location", style: TextStyle(fontSize: 15,color: Color.fromARGB(255, 255, 255, 255)),
         ),
           SizedBox(
           height: 10.0,
