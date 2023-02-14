@@ -11,14 +11,15 @@ class Weather1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 184, 188, 224),
 
-      backgroundColor: Color(0xFF28317e),
       appBar: AppBar(
         title: Text('<                           Weather'),
         centerTitle: false,
               ),
       body: Container(
-        color: Color(0xFF28317e),
+        color: Color.fromARGB(255, 184, 188, 224),
+
         margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 20.0, bottom:20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -43,7 +44,7 @@ class Weather1 extends StatelessWidget {
                 children: [
                   Column(
                     children: const [
-                      Text('30^o C', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
+                      Text('30\u2103', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
                       Text('H24 L:18', style: TextStyle(fontSize: 18)),
                       Text('Kicukiro, Rwanda',style: TextStyle(fontSize: 18)),
                     ],
@@ -66,8 +67,8 @@ class Weather1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
-                    children: const [
-                      Text('23^o C', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
+                    children: const[
+                      Text('23\u2103', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
                       Text('H24 L:16', style: TextStyle(fontSize: 18)),
                       Text('Kayonza, Rwanda',style: TextStyle(fontSize: 18)),
                     ],
@@ -91,7 +92,7 @@ class Weather1 extends StatelessWidget {
                 children: [
                   Column(
                     children: const [
-                      Text('30^o C', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
+                      Text('30\u2103', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
                       Text('H30 L:23', style: TextStyle(fontSize: 18)),
                       Text('Kicukiro, Rwanda',style: TextStyle(fontSize: 18)),
                     ],

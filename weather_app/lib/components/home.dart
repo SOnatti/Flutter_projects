@@ -25,22 +25,23 @@ class _homeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // contains bottom navigation.
-      backgroundColor: Color(0xFF28317e),
+      backgroundColor: Color.fromARGB(255, 184, 188, 224),
 
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           weatherLocation(
-              "Kigali", Icons.wb_cloudy, "22", "Saturday January 28, 2023"),
+              "Montreal", "22\u2103", "Saturday January 28, 2023",
+               "Mostly Clear",),
           const SizedBox(height: 60),
-          HourText("Hour Updates", "Weekly Updates"),
+          /*HourText("Hourly Updates", "Weekly Updates"),
           const SizedBox(
-            height: 40,
+            height: 30,
           ),
-          upDates("11:20am", Icons.sunny_snowing, "28.1"),
+          upDates("11:20am", Icons.sunny_snowing, "28.1"),*/
         ],
       ),
+
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Color.fromARGB(255, 95, 100, 139),
         // ignore: prefer_const_literals_to_create_immutables
@@ -52,7 +53,7 @@ class _homeState extends State<Home> {
         animationDuration: const Duration(milliseconds: 150),
         color: Colors.white,
        
-       //routing.       
+       //routing. navigating through the pages    //pagecontroller
         onTap: (int index) {
           var _index;
           // ignore: duplicate_ignore
