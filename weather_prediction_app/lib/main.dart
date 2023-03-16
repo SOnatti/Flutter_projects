@@ -262,7 +262,7 @@ class WeatherDescription extends StatelessWidget {
           } else if (snapshot.hasError) {
           return Center(
           child: Text(
-          'Failed to load weather data',
+          'Failed to load weather data from open Weather ',
           style: TextStyle(fontSize: 20,
                           fontWeight: FontWeight.w500,
                         ),
